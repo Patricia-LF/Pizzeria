@@ -8,7 +8,7 @@
 
 <main>
     <div class="sal">
-        <img src="wp-content/themes/Pizzeria/assets/salame.jpg" class="salame-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/salame.jpg" class="salame-img">
         <section class="salame">
             <h2>salame</h2>
             <p>At The Pizzeria, we bring old-world craft into the modern age. Our pizzas start with 48-hour fermented dough, blistered to perfection in a roaring stone oven and topped with seasonal ingredients sourced from local farms.

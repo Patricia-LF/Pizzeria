@@ -12,7 +12,7 @@
 
 <body <?php body_class(); ?>>
     <header class="site-header">
-        <a href="<?php echo get_permalink(30); ?>"> <img src="wp-content/themes/Pizzeria/assets/pizza-logo.svg"></a>
+        <a href="<?php echo get_permalink(30); ?>"> <img src="<?php echo get_template_directory_uri(); ?>/assets/pizza-logo.svg"></a>
         <div class="start-links">
             <a href="#story">Story</a>
             <p> / </p>

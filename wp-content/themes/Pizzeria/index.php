@@ -9,7 +9,7 @@
 <main>
     <section class="hero">
         <div class="overlay-container">
-            <img src="wp-content/themes/Pizzeria/assets/pizzeria2.jpg">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/pizzeria2.jpg">
         </div>
 
         <div class="hero-text-container">
@@ -34,15 +34,15 @@
 
         <div class="pizzas">
             <div class="pizza-img">
-                <img src="wp-content/themes/Pizzeria/assets/margherita.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/margherita.jpg">
                 <a href="<?php echo get_permalink(34); ?>" class="pizza-link">Margherita</a>
             </div>
             <div class="pizza-img">
-                <img src="wp-content/themes/Pizzeria/assets/salame.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/salame.jpg">
                 <a href="<?php echo get_permalink(32); ?>" class="pizza-link">Salame</a>
             </div>
             <div class="pizza-img">
-                <img src="wp-content/themes/Pizzeria/assets/vegetale.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/vegetale.jpg">
                 <a href="<?php echo get_permalink(28); ?>" class="pizza-link">Vegetale</a>
             </div>
         </div>

@@ -9,7 +9,7 @@
 <main>
     <section class="contact-info">
         <div class="overlay-container">
-            <img src="wp-content/themes/Pizzeria/assets/pizza-sign.jpg" class="pizza-sign">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/pizza-sign.jpg" class="pizza-sign">
         </div>
 
         <div class="contact-info-container">
