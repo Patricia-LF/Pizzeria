@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+  color: #fff;
+  font-family: "FliegeMono", sans-serif;
+}
+
+@font-face {
+  font-family: "FliegeMono";
+  src: url("fonts/FliegeMono-Regular.woff2") format("woff2");
+  font-weight: 200; /* or 400 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FliegeMono";
+  src: url("fonts/FliegeMono-Bold.woff2") format("woff2");
+  font-weight: bold; /* or 700 */
+  font-style: normal;
+}
+
+.site-header {
+  position: absolute;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  justify-self: center;
+  z-index: 1;
+}
+
+.site-header img {
+  width: 55px;
+  margin-top: 10px;
+}
+
+.start-links,
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.start-links a,
+.start-links p,
+.contact-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.884);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 200;
+}
+
+main {
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.overlay-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.overlay-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.432);
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1,
+.contact-info-container h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 6.3rem;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.884);
+  max-width: 60%;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 120px;
+  font-weight: 200;
+}
+
+.story h2,
+.pizzas-container h2,
+.vegetale h2,
+.salame h2,
+.margherita h2,
+.contact-info-container h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: rgb(201, 201, 201);
+  align-items: center;
+  letter-spacing: 1.6;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+}
+
+.story p,
+.vegetale p,
+.salame p,
+.margherita p {
+  color: rgba(255, 255, 255, 0.884);
+  text-align: center;
+  width: 60%;
+  font-weight: 200;
+}
+
+.pizzas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.pizzas {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.pizza-img {
+  height: 360px;
+  width: 330px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pizza-img img {
+  height: 330px;
+  overflow: hidden;
+}
+
+.pizza-img p,
+.pizza-img a {
+  color: rgba(255, 255, 255, 0.884);
+  text-align: left;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.884);
+  font-weight: 200;
+}
+
+.site-footer div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.site-footer img {
+  height: 25px;
+}
+
+.site-footer .instagram-img {
+  height: 35px;
+}
+
+.page-id-28 .site-header,
+.page-id-32 .site-header,
+.page-id-34 .site-header {
+  position: relative;
+}
+
+.veg,
+.sal,
+.mar {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.vegetale-img,
+.salame-img,
+.margherita-img {
+  height: 100vh;
+}
+
+.vegetale,
+.salame,
+.margherita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.vegetale p,
+.salame p,
+.margherita p {
+  width: 70%;
+}
+
+.pizza-sign {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact-info-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  top: 40%;
+  gap: 40px;
+}
+
+.page-id-26 .site-footer {
+  position: absolute;
+  width: 100%;
+  align-self: end;
+  margin-bottom: 40px;
+}
