@@ -15,3 +15,7 @@ A custom WordPress theme built from scratch based on a provided design, for a fi
 - CSS overlay with ::after and mix-blend-mode
 - Dynamic page links via get_permalink()
 - Asset files (SVG, JPG, WOFF2) organised in assets/ and fonts/
+
+## Tech
+
+WordPress, PHP, CSS, HTML
